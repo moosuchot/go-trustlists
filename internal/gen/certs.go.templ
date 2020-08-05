@@ -1,0 +1,7 @@
+package gen
+
+//go:generate go run ../../cmd/update-trustlist-eu/main.go ../../files/tl-mp.xml ../gen/certs.go.templ ../gen/eucerts.go
+
+var EUCerts = []string{
+{{range .Certs}}	"{{.}}",
+{{end}}}
