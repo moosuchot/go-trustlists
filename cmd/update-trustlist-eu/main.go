@@ -5,9 +5,9 @@ import (
 	"crypto/x509"
 	"encoding/base64"
 	"encoding/xml"
-	"html/template"
 	"io/ioutil"
 	"os"
+	"text/template"
 
 	"github.com/philhug/go-trustlists/internal"
 )
