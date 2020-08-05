@@ -21,7 +21,7 @@ func EUCertPool(opts Options) (*x509.CertPool, error) {
 		if err != nil {
 			return nil, err
 		}
-		c, err = x509.ParseCertificate(cb)
+		c, err := x509.ParseCertificate(cb)
 		if err != nil {
 			return nil, err
 		}
